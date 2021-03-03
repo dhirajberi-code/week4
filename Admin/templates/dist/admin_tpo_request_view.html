@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Third Party Request List</title>
+{% endblock %}
+{% block content %}
+{% csrf_token %}
+{% load static %}
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table mr-1"></i>
+        Third Party Request List
+    </div>
+    <div class="card-body" width="120%">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email ID</th>
+                        <th>Approve/Decline</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Yudiz Solution Pvt Ltd</td>
+                        <td>yudizsolution@gmail.com</td>
+                        <td><button type="button" class="btn btn-success">Approve</button>
+                            <button type="button" class="btn btn-danger">Decline</button></td>
+                    </tr>
+                    <tr>
+                        <td>Google</td>
+                        <td>Google@gmail.com</td>
+                        <td><button type="button" class="btn btn-success">Approve</button>
+                            <button type="button" class="btn btn-danger">Decline</button></td>
+                    </tr>
+                    <tr>
+                        <td>Samsung</td>
+                        <td>samsung@gmail.com</td>
+                        <td><button type="button" class="btn btn-success">Approve</button>
+                            <button type="button" class="btn btn-danger">Decline</button></td>
+                    </tr>
+                    <tr>
+                        <td>Infosys</td>
+                        <td>Infosys@gmail.com</td>
+                        <td><button type="button" class="btn btn-success">Approve</button>
+                            <button type="button" class="btn btn-danger">Decline</button></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock%}

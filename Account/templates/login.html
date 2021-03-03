@@ -1,0 +1,42 @@
+{% extends 'account_base.html' %}
+{% block title %}Login{% endblock%}
+{%block content%}
+			<form class="login100-form validate-form" method="post" action="{% url 'login' %}">
+				{% csrf_token %}
+				<span class="login100-form-title p-b-37">
+					SIGN IN
+				</span>
+
+				<div class="wrap-input100 validate-input m-b-20" data-validate="Enter email">
+					<input class="input100" type="email" name="email" placeholder="Email">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
+					<input class="input100" type="password" name="pass" placeholder="Password">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-login100-form-btn">
+					<button type="submit" class="login100-form-btn">
+						Sign In
+					</button>
+				</div>
+
+				<br>
+
+				<div class="text-center">
+					<a href="forget-password.html" class="txt2 hov1">
+						Forget Password?
+					</a>
+				</div>
+
+				<br>
+				<div class="text-center">
+					Don't have an account?
+					<a href="{% url 'category_signup' %}" class="txt2 hov1">
+						<u>Sign Up</u>
+					</a>
+				</div>
+			</form>
+{%endblock%}

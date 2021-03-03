@@ -1,0 +1,113 @@
+{% extends 'StudentBase.html' %}
+{% load static %}
+{% block title %}
+<title> Student Profile Edit</title>
+{% endblock %}
+{% block content %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Edit</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'profile.css' %}">
+</head>
+
+<body>
+    <div class="container emp-profile">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="profile-head">
+                        <h5>
+                            Sanket Jethava
+                        </h5>
+                        <h6>
+                            GTU | <a href="/StudentViewProfile">View Profile</a>
+                        </h6>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="tab-content profile-tab" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Email</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Phone</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="number" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>DOB</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="date" placeholder="DOB">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Organization</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Organization">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Department</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Department">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Batch</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Batch">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Address</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <textarea name="" id="" cols="30" rows="10" style="margin-top: 0px; margin-bottom: 0px; height: 129px;"></textarea>
+                                </div>
+                            </div>
+                            <div class="profile-head">
+                                <h6>
+                                    <a href="/SaveStudentProfile">SAVE</a> | <a href="/StudentViewProfile">DISCARD</a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+{% endblock%}

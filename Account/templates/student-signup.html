@@ -1,0 +1,61 @@
+{% extends 'account_base.html' %}
+{% block title %} Student Signup {% endblock%}
+{%block content%}
+			<form class="login100-form validate-form" action="/login">
+				<span class="login100-form-title p-b-37">
+					Student Registration
+				</span>
+
+                <div class="wrap-input100 validate-input m-b-20" data-validate="Enter first name">
+					<input class="input100" type="text" name="firstname" placeholder="First Name">
+					<span class="focus-input100"></span>
+				</div>
+
+                <div class="wrap-input100 validate-input m-b-20" data-validate="Enter last name">
+					<input class="input100" type="text" name="lastname" placeholder="Last Name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input m-b-20" data-validate="Enter email">
+					<input class="input100" type="email" name="email" placeholder="Email">
+					<span class="focus-input100"></span>
+				</div>
+
+                <div class="wrap-input100 validate-input m-b-20" data-validate="Enter DOB">
+					<input class="input100" type="date" name="dob" placeholder="DOB">
+					<span class="focus-input100"></span>
+				</div>
+
+                <div class="wrap-input100 validate-input m-b-20" data-validate="Enter contact">
+					<input class="input100" type="number" name="contact" placeholder="Contact">
+					<span class="focus-input100"></span>
+				</div>
+
+                <div class="wrap-input100 validate-input m-b-20" data-validate="Enter organization">
+					<input class="input100" type="text" name="organization" placeholder="Organization">
+					<span class="focus-input100"></span>
+				</div>
+
+                <div class="wrap-input100 validate-input m-b-20" data-validate="Enter department">
+					<input class="input100" type="text" name="department" placeholder="Department">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
+					<input class="input100" type="password" name="pass" placeholder="Password">
+					<span class="focus-input100"></span>
+				</div>
+
+                <div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
+					<input class="input100" type="password" name="pass" placeholder="Confirm Password">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-login100-form-btn">
+					<button class="login100-form-btn">
+						Register    
+					</button>
+				</div>
+			</form>
+
+{%endblock%}

@@ -1,0 +1,14 @@
+{% extends 'account_base.html' %}
+{% block title %}Signup{% endblock%}
+{%block content%}
+			<div class="login100-form validate-form">
+				<span class="login100-form-title p-b-37">
+					REGISTER AS
+				</span>
+
+                <center><button class="login100-form-btn" onclick="window.location.href='/org_signup'">Organization</button></center><br>
+                <center><button class="login100-form-btn" onclick="window.location.href='/student_signup'">Student</button></center><br>
+                <center><button class="login100-form-btn" onclick="window.location.href='/tp_signup'">Third Party</button></center><br>
+
+			</div>
+{%endblock%}
