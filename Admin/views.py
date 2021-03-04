@@ -15,3 +15,6 @@ def AdminOrgBlock(request):
 
 def AdminTPORequest(request):
 	return render(request,'./dist/admin_tpo_request_view.html')	
+
+def AdminHome(request):
+	return render(request,'./dist/admin_home.html')	
