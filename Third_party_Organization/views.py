@@ -4,4 +4,7 @@ from django.shortcuts import render
 def ThirdPartyOrganizationDashboard(request):
 	print("Here")
 	return render(request,'./dist/ThirdPartyOrganizationBase.html')
+
+def ThirdPartyOrganizationHome(request):
+	return render(request,'./dist/ThirdPartyOrganization_home.html')
 	

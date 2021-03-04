@@ -5,4 +5,5 @@ urlpatterns = [
     path('StudentViewProfile/',views.StudentViewProfile,name='StudentViewProfile'),
     path('StudentEditProfile/',views.StudentEditProfile,name='StudentEditProfile'),
     path('SaveStudentProfile/',views.SaveStudentProfile,name='SaveStudentProfile'),
+    path('StudentHome/',views.StudentHome,name='StudentHome'),
 ]
