@@ -6,5 +6,6 @@ urlpatterns = [
 	path('list/',views.AdminOrgList),
 	path('block/',views.AdminOrgBlock),
 	path('tporequest/',views.AdminTPORequest),
+	path('AdminHome/',views.AdminHome),
 	
 ]
