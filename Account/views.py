@@ -8,17 +8,13 @@ def forgetpassword(request):
 
 def login(request):
 	if request.method=="POST":
-		print("post method")
 		email=request.POST['email']
 		password=request.POST['pass']
 		detail={'email':email,'password':password}
-		print(detail)
 		r = requests.post('http://127.0.0.1:8080/login',json=detail)
-		print(r)
 		if str(r)=='<Response [200]>':
 			return redirect('/StudentDashboard')
 		else:
-			print('here')
 			return redirect('login')
 	else:
 		return render(request,'login.html')
