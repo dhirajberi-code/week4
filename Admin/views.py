@@ -18,3 +18,6 @@ def AdminTPORequest(request):
 
 def AdminHome(request):
 	return render(request,'./dist/admin_home.html')	
+
+def AdminViewPerticularOrg(request):
+	return render(request,'./dist/view_perticular_org.html')
