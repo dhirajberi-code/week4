@@ -7,9 +7,9 @@
 					REGISTER AS
 				</span>
 
-                <center><button class="login100-form-btn register" onclick="window.location.href='/organization-signup.html'">Organization</button></center><br>
-                <center><button class="login100-form-btn register" onclick="window.location.href='/student-signup.html'">Student</button></center><br>
-                <center><button class="login100-form-btn register" onclick="window.location.href='/third-party-signup.html'">Third Party</button></center><br>
+                <center><button class="login100-form-btn register" onclick="window.location.href={% url 'org_signup' %}">Organization</button></center><br>
+                <center><button class="login100-form-btn register" onclick="window.location.href={% url 'student_signup' %}">Student</button></center><br>
+                <center><button class="login100-form-btn register" onclick="window.location.href={% url 'tp_signup' %}">Third Party</button></center><br>
 
 			</div>
 {% endblock %}

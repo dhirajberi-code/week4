@@ -9,7 +9,7 @@ urlpatterns = [
     path('category_signup/', views.category_signup,name="category_signup"),
     path('student_signup/', views.student_signup,name="student_signup"),
     path('tp_signup/', views.tp_signup,name="tp_signup"),
-    path('verify_user/', views.verify_user,name="tp_signup"),
+    path('verify_user/', views.verify_user,name="verfy_user"),
 	
 
 
