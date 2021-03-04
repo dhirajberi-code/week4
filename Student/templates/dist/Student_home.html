@@ -1,6 +1,6 @@
-{% extends 'base.html' %}
+{% extends 'StudentBase.html' %}
 {% block title %}
-<title>Admin - Dashboard</title>
+<title>Student - Dashboard</title>
 {% endblock %}
 {% block content %}
 {% csrf_token %}
@@ -10,10 +10,10 @@
                     <div class="card bg-primary text-white mb-3">
                         <div class="card-body">
                             <div class="card-footer d-flex align-items-center justify-content-between">
-                                Organization
+                                Certificates
                             </div>
                             <br> 
-                            <h5>Total Active Organization</h5> <h2>52</h2>
+                            <h5>Total Certificates <br><br></h5> <h2>52</h2>
                         </div>
                         {% comment %} <div class="card-footer d-flex align-items-center justify-content-between">
                             <a class="small text-white stretched-link" href="#">View Details</a>
@@ -24,10 +24,10 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="card bg-warning text-white mb-3">
                         <div class="card-body"><div class="card-footer d-flex align-items-center justify-content-between">
-                                Organization
+                                Certificates
                             </div>
                             <br> 
-                            <h5>Total Blocked Organization</h5> <h2>52</h2></div>
+                            <h5>Total Sent Request For Certificates</h5> <h2>52</h2></div>
                         {% comment %} <div class="card-footer d-flex align-items-center justify-content-between">
                             <a class="small text-white stretched-link" href="#">View Details</a>
                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -38,10 +38,10 @@
                     <div class="card bg-success text-white mb-3">
                         <div class="card-body">
                         <div class="card-footer d-flex align-items-center justify-content-between">
-                                Organization
+                                Certificates
                             </div>
                             <br> 
-                            <h5>Total Request By Organization</h5> <h2>52</h2></div>
+                            <h5>Total Sent Request For New Category Certificates</h5> <h2>52</h2></div>
                         {% comment %} <div class="card-footer d-flex align-items-center justify-content-between">
                             <a class="small text-white stretched-link" href="#">View Details</a>
                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -52,10 +52,10 @@
                     <div class="card bg-primary text-white mb-3">
                         <div class="card-body">
                             <div class="card-footer d-flex align-items-center justify-content-between">
-                               Third Party Organization
+                               Third Party Organizations<br>
                             </div>
                             <br> 
-                            <h5>Total Active Third Party Organization</h5> <h2>52</h2>
+                            <h5>Total Approved Organizations</h5><br> <h2>52</h2>
                         </div>
                         {% comment %} <div class="card-footer d-flex align-items-center justify-content-between">
                             <a class="small text-white stretched-link" href="#">View Details</a>
@@ -66,24 +66,24 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="card bg-warning text-white mb-3">
                         <div class="card-body"><div class="card-footer d-flex align-items-center justify-content-between">
-                               Third Party Organization
+                               Third Party Organizations
                             </div>
                             <br> 
-                            <h5>Total Blocked Third Party Organization</h5> <h2>52</h2></div>
+                            <h5>Total Requests By Third Party Organizations</h5> <h2>52</h2></div>
                         {% comment %} <div class="card-footer d-flex align-items-center justify-content-between">
                             <a class="small text-white stretched-link" href="#">View Details</a>
                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                         </div> {% endcomment %}
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6">
+                 <div class="col-xl-4 col-md-6">
                     <div class="card bg-success text-white mb-3">
                         <div class="card-body">
                         <div class="card-footer d-flex align-items-center justify-content-between">
-                                Third Party Organization
+                                Third Party Organizations
                             </div>
                             <br> 
-                            <h5>Total Request By Third Party Organization</h5> <h2>52</h2></div>
+                            <h5>Total Blocked Third Party Organizations</h5> <h2>52</h2></div>
                         {% comment %} <div class="card-footer d-flex align-items-center justify-content-between">
                             <a class="small text-white stretched-link" href="#">View Details</a>
                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
