@@ -13,7 +13,7 @@ def login(request):
 		detail={'email':email,'password':password}
 		r = requests.post('http://127.0.0.1:8080/login',json=detail)
 		if str(r)=='<Response [200]>':
-			return redirect('/StudentDashboard')
+			return redirect('/StudentHome')
 		else:
 			return redirect('login')
 	else:

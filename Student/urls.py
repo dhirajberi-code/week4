@@ -9,5 +9,6 @@ urlpatterns = [
     path('StudentChangePassword/',views.StudentChangePassword,name='StudentChangePassword'),
     path('ListOfCertificate/',views.ListOfCertificate,name='ListOfCertificate'),
     path('RequestForCertificate/',views.RequestForCertificate,name='RequestForCertificate'),
+    path('ViewCertificate/',views.ViewCertificate,name='ViewCertificate'),
     path('RequestForNewCategory/',views.RequestForNewCategory,name='RequestForNewCategory'),
 ]

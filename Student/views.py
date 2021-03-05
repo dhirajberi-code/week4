@@ -35,3 +35,6 @@ def RequestForCertificate(request):
 
 def RequestForNewCategory(request):
 	return render(request,'./dist/request-new-category.html')
+
+def ViewCertificate(request):
+	return render(request,'./dist/certificate.html')
