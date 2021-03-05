@@ -34,4 +34,4 @@ def RequestForCertificate(request):
 	return render(request,'./dist/request-certificate.html')
 
 def RequestForNewCategory(request):
-	return render(request,'./dist/request-certificate.html')
+	return render(request,'./dist/request-new-category.html')
