@@ -1,0 +1,67 @@
+{% extends 'StudentBase.html' %}
+{% load static %}
+{% block title %}
+<title> Request New Certificate </title>
+{% endblock %}
+{% block content %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request New Certificate</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+</head>
+
+<body>
+    <div class="container emp-profile">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="profile-head">
+                        <h5>
+                            Dhiraj Beri
+                        </h5>
+                        <h6>
+                            GTU | <a href="/StudentViewProfile">View Profile</a>
+                        </h6>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="tab-content profile-tab" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Certificate Name</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Certificate Name">
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <h6>
+                                    <button class="save-btn">SAVE</button>
+                                    <button class="discard-btn">DISCARD</button>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+{% endblock %}
