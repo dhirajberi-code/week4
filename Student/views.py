@@ -19,7 +19,6 @@ def	SaveStudentProfile(request):
 	print("Student Profile Save")
 	return render(request,'./dist/student-profile.html')
 
-
 def StudentHome(request):
 	return render(request,'./dist/Student_home.html')
 
