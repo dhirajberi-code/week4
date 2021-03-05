@@ -1,5 +1,7 @@
 from django.conf.urls import url
 from django.shortcuts import redirect, render
+from django.contrib import auth
+from django.contrib.auth.decorators import login_required
 import requests
 # Create your views here.
 
@@ -13,6 +15,8 @@ def login(request):
 		detail={'email':email,'password':password}
 		r = requests.post('http://127.0.0.1:8080/login',json=detail)
 		if str(r)=='<Response [200]>':
+			#user = auth.authenticate(request, username=email, password=password)
+			#print(user)
 			request.session['email']=email
 			print(request.session['email'])
 			return redirect('/StudentHome')
@@ -24,6 +28,7 @@ def login(request):
 def logout(request):
 	try:
 		del request.session['email']
+		#auth.authenticate(request)
 	except:
 		pass
 	return redirect('/login')
