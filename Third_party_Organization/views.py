@@ -7,4 +7,3 @@ def ThirdPartyOrganizationDashboard(request):
 
 def ThirdPartyOrganizationHome(request):
 	return render(request,'./dist/ThirdPartyOrganization_home.html')
-	

@@ -1,0 +1,64 @@
+{% extends 'OrganizationBase.html' %}
+{% load static %}
+{% block title %}
+<title> Organization(s) Request List</title>
+{% endblock %}
+{% block content %}
+{% csrf_token %}
+
+
+<div class="card mb-6">
+    <div class="card-header">
+        <i class="fas fa-table mr-1"></i>
+        Organization(s) Request List
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email ID</th>
+                        <th>Approve/Decline</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><a href="{% url 'ViewPerticularOrg' %}" >Smit Parmar</a></td>
+                        <td>Smit@gmail.com</td>
+                        <td><button type="button" class="btn btn-success">Approve</button>
+                            <button type="button" class="btn btn-danger">Decline</button></td>
+                    </tr>
+                    <tr>
+                        <td><a href="{% url 'ViewPerticularOrg' %}" >Dhiraj Beri</a></td>
+                        <td>Dhiraj@gmail.com</td>
+                        <td><button type="button" class="btn btn-success">Approve</button>
+                            <button type="button" class="btn btn-danger">Decline</button></td>
+                    </tr>
+                    <tr>
+                        <td><a href="{% url 'ViewPerticularOrg' %}" >Sanket Jethva</a></td>
+                        <td>Sanket@gmail.com</td>
+                        <td><button type="button" class="btn btn-success">Approve</button>
+                            <button type="button" class="btn btn-danger">Decline</button></td>
+                    </tr>
+                    <tr>
+                        <td><a href="{% url 'ViewPerticularOrg' %}" >Org 2</a></td>
+                        <td>org1@gmail.com</td>
+                        <td><button type="button" class="btn btn-success">Approve</button>
+                            <button type="button" class="btn btn-danger">Decline</button></td>
+                    </tr>
+                    <tr>
+                        <td><a href="{% url 'ViewPerticularOrg' %}" >Org 2</a></td>
+                        <td>org1@gmail.com</td>
+                        <td><button type="button" class="btn btn-success">Approve</button>
+                            <button type="button" class="btn btn-danger">Decline</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
