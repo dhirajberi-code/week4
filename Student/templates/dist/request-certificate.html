@@ -1,7 +1,7 @@
 {% extends 'StudentBase.html' %}
 {% load static %}
 {% block title %}
-<title> Change Password </title>
+<title> Request For Certificate </title>
 {% endblock %}
 {% block content %}
 {% csrf_token %}
@@ -46,10 +46,10 @@
                                 </div>
                                 <div class="col-md-6">
                                     <select name="cars" id="cars">
-                                        <option value="volvo">Volvo</option>
-                                        <option value="saab">Saab</option>
-                                        <option value="mercedes">Mercedes</option>
-                                        <option value="audi">Audi</option>
+                                        <option value="tenth">10 th</option>
+                                        <option value="twelweth">12 th</option>
+                                        <option value="University">University</option>
+                                        
                                       </select>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@
                                     <label>Note</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    <textarea name="" id="" cols="30" rows="10" style="margin-top: 8px; margin-bottom: 8px; height: 155px;"></textarea>
                                 </div>
                             </div>
                             <br>

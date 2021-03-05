@@ -29,3 +29,9 @@ def RequestForNewCategory(request):
 
 def StudentChangePassword(request):
 	return render(request,'./dist/change-password.html')
+
+def RequestForCertificate(request):
+	return render(request,'./dist/request-certificate.html')
+
+def RequestForNewCategory(request):
+	return render(request,'./dist/request-certificate.html')
