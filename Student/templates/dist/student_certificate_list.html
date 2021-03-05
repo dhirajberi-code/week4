@@ -1,0 +1,53 @@
+{% extends 'Studentbase.html' %}
+{% block title %}
+<title>Certificate List</title>
+{% endblock %}
+
+{% block content %}
+{% csrf_token %}
+{% load static %}
+
+
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table mr-1"></i>
+        Certificates
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Certificate Name</th>
+                        <th>Issued Date</th>
+                        <th>View</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+
+                    <tr>
+                        <td><a href="{% url 'ViewPerticularOrg' %}" >10th Certificate</a></td>
+                        <td>12-2-2020</td>
+                        <td><button type="button" class="btn btn-primary btn-block">View</button></td>
+                    </tr>
+                    <tr>
+                        <td><a href="{% url 'ViewPerticularOrg' %}" >12th Certificate</a></td>
+                        <td>12-2-2020</td>
+                        <td><button type="button" class="btn btn-primary btn-block">View</button></td>
+                    </tr>
+                    <tr>
+                        <td><a href="{% url 'ViewPerticularOrg' %}" >Degree Certificate</a></td>
+                        <td>12-2-2020</td>
+                        <td><button type="button" class="btn btn-primary btn-block">View</button></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

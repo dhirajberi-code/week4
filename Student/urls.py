@@ -6,4 +6,8 @@ urlpatterns = [
     path('StudentEditProfile/',views.StudentEditProfile,name='StudentEditProfile'),
     path('SaveStudentProfile/',views.SaveStudentProfile,name='SaveStudentProfile'),
     path('StudentHome/',views.StudentHome,name='StudentHome'),
+    path('StudentChangePassword/',views.StudentChangePassword,name='StudentChangePassword'),
+    path('ListOfCertificate/',views.ListOfCertificate,name='ListOfCertificate'),
+    path('RequestForCertificate/',views.RequestForCertificate,name='RequestForCertificate'),
+    path('RequestForNewCategory/',views.RequestForNewCategory,name='RequestForNewCategory'),
 ]

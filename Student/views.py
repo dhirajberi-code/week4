@@ -15,6 +15,17 @@ def	SaveStudentProfile(request):
 	print("Student Profile Save")
 	return render(request,'./dist/student-profile.html')
 
-
 def StudentHome(request):
 	return render(request,'./dist/Student_home.html')
+
+def ListOfCertificate(request):
+	return render (request,'./dist/student_certificate_list.html')
+
+def RequestForCertificate(request):
+	return render (request,'./dist/student_request_for_certificate.html')
+
+def RequestForNewCategory(request):
+	return render (request,'./dist/student_request_for_new_category.html')
+
+def StudentChangePassword(request):
+	return render(request,'./dist/change-password.html')
