@@ -21,3 +21,12 @@ def AdminHome(request):
 
 def AdminViewPerticularOrg(request):
 	return render(request,'./dist/view_perticular_org.html')
+
+def AdminViewAllTP(request):
+	return render(request,'./dist/admin_view_all_third_party.html')
+
+def AdminViewPerticularTP(request):
+	return render(request,'./dist/admin_view_perticular_third_party.html')
+
+def AdminViewBlockedTP(request):
+	return render(request,'./dist/admin_view_blocked_third_party.html')

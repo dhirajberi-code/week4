@@ -2,6 +2,7 @@ from django.conf.urls import url
 from django.shortcuts import redirect, render
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse  
 import requests
 # Create your views here.
 
@@ -18,10 +19,10 @@ def login(request):
 			#user = auth.authenticate(request, username=email, password=password)
 			#print(user)
 			request.session['email']=email
-			print(request.session['email'])
+			#print(request.session['email'])
 			return redirect('/StudentHome')
 		else:
-			return redirect('login')
+			return redirect('/login')
 	else:
 		return render(request,'login.html')
 

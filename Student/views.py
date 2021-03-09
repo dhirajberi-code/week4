@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
+from django.http import HttpResponse  	
+import requests
 
 import requests,json
 # Create your views here.
@@ -20,7 +22,11 @@ def	SaveStudentProfile(request):
 	return render(request,'./dist/student-profile.html')
 
 def StudentHome(request):
-	return render(request,'./dist/Student_home.html')
+	try:
+		request.session['email']
+		return render(request,'./dist/Student_home.html')
+	except:
+		return redirect('/login')
 
 def ListOfCertificate(request):
 	return render (request,'./dist/student_certificate_list.html')

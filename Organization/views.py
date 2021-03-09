@@ -10,3 +10,10 @@ def OrganizationHome(request):
 
 def OrganizationStudentRequest(request):
 	return render(request,'./dist/org_student_request.html')
+
+
+def OrganizationBlockedStudent(request):
+	return render(request,'./dist/org_view_blocked_student.html')
+
+def OrganizationAllStudent(request):
+	return render(request,'./dist/org_view_all_student.html')

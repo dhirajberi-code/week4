@@ -1,0 +1,57 @@
+{% extends 'OrganizationBase.html' %}
+{% block title %}
+<title>All Student List</title>
+{% endblock %}
+
+{% block content %}
+{% csrf_token %}
+{% load static %}
+
+
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table mr-1"></i>
+        All Student List
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email ID</th>
+                        <th>Block</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><a href="{% url 'ViewPerticularTP' %}" >Name 1</a></td>
+                        <td>Name1@gmail.com</td>
+                        <td><button type="button" class="btn btn-danger">Block</button></td>
+                    </tr>
+                    <tr>
+                        <td><a href="{% url 'ViewPerticularTP' %}" >Name 2</a></td>
+                        <td>Name1@gmail.com</td>
+                        <td><button type="button" class="btn btn-danger">Block</button></td>
+                    </tr>
+                    <tr>
+                        <td><a href="{% url 'ViewPerticularTP' %}" >Name 3</a></td>
+                        <td>Name1@gmail.com</td>
+                        <td><button type="button" class="btn btn-danger">Block</button></td>
+                    </tr>
+                    <tr>
+                        <td><a href="{% url 'ViewPerticularTP' %}" >Name 4</a></td>
+                        <td>Amazon@gmail.com</td>
+                        <td><button type="button" class="btn btn-danger">Block</button></td>
+
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
